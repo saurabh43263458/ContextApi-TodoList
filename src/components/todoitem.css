@@ -1,0 +1,45 @@
+.main-todoitem{
+    margin-block: 1.5rem;
+   width:auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(178, 156, 198);
+   border-radius: 10px;
+}
+.main1-todoitem{
+    margin-block: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main1-todoitem-same2{
+    border-style: none;
+    margin: 0%;
+    font-weight: 900;
+    color: black;
+    font-size: large;
+    width:25rem;
+     padding: 0.9rem;
+     margin-inline: 1rem;
+    border-radius: 10px;
+    background-color: rgb(178, 156, 198);
+}
+.main1-todoitem   :nth-child(3){
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.main-todoitem:has(.main1-todoitem-same1:checked) {
+    background-color: aquamarine;
+}
+.main-todoitem:has(.main1-todoitem-same1:checked) .main1-todoitem-same2{
+    background-color: aquamarine;
+    text-decoration: line-through;
+}
+.main1-todoitem-button-2{
+    margin-right:3px;
+}
